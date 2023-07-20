@@ -1,4 +1,4 @@
-*/ Introductory code to exercise creating a table and inserting rows
+/* Introductory code to exercise creating a table and inserting rows */
 CREATE TABLE Books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER UNIQUE);
 
 INSERT INTO Books VALUES (1,'Joy Luck Club', 2);
