@@ -1,0 +1,20 @@
+/*Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. You 
+should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.*/
+
+CREATE TABLE Itemize (id INTEGER PRIMARY KEY, item TEXT, stock INTEGER, price INTEGER, rating INTEGER);
+INSERT into Itemize values (1, 'Bike', 3, 100, 5);
+INSERT into Itemize values (2, 'Tire', 10, 25, 5);
+INSERT into Itemize values (3, 'Tire Pack', 6, 20, 5);
+INSERT into Itemize values (4, 'Handlebar',6,15,5);
+Insert into itemize values (5, 'Bike Chain', 10, 10, 5);
+Insert into itemize values (6, 'Phone Holder', 3,30,5);
+Insert into itemize values (7, 'Bottle Holder', 3,30,5);
+Insert into itemize values (8, 'Water Bottle', 3,30,5);
+Insert into itemize values (9, 'Handle Grip', 3,30,5);
+Insert into itemize values (10, 'Pedal Grip', 3,30,5);
+Insert into itemize values (11, 'Child Seat', 3,30,5);
+Insert into itemize values (12, 'Front Basket', 3,30,5);
+Insert into itemize values (13, 'Bike Bell', 3,30,5);
+Insert into itemize values (14, 'Bike Helmet',3,30,5);
+Select item, avg(price) from itemize group by item;
