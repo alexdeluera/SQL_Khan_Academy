@@ -1,0 +1,6 @@
+*/ Introductory code to exercise creating a table and inserting rows
+CREATE TABLE Books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER UNIQUE);
+
+INSERT INTO Books VALUES (1,'Joy Luck Club', 2);
+INSERT INTO Books VALUES (2, 'Circe', 1);
+INSERT INTO Books VALUES (3, 'The Witch and the Tsar', 3);
